@@ -30,7 +30,7 @@ app.put('/edit/:id', controllers.updatePost); // Route to handle update
 //  Delete request
 app.delete('/delete/:id', controllers.deletePost);
 
-mongoose.connect('mongodb+srv://userforBlog:COjDVyTbrxw6RkpS@cluster0.9l3zkjy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+mongoose.connect('mongodb+srv://userforBlog:COjDVyTbrxw6RkpS@cluster0.9l3zkjy.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => {
         app.listen(port, () => {
             console.log(`Example app listening on port ${port}`)
