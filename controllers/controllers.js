@@ -44,6 +44,13 @@ const getEdit = (req, res) => {
         });
 };
 
+const getLogin = (req, res) => {
+    res.render('login');
+}
+const getSignup = (req, res) => {
+    res.render('signup');
+}
+
 const createPost = (req, res) => {
     Article.create(req.body)
         .then(() => {
@@ -86,5 +93,7 @@ module.exports = {
     createPost,
     updatePost,
     getEdit,
-    deletePost
+    deletePost,
+    getLogin,
+    getSignup
 };

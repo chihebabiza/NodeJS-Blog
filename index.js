@@ -20,7 +20,8 @@ app.get('/new.html', controllers.getNew);
 app.get('/about.html', controllers.getAbout);
 app.get('/contact.html', controllers.getContact);
 app.get('/edit:id', controllers.getEdit);
-
+app.get('/login', controllers.getLogin);
+app.get('/signup', controllers.getSignup);
 // Post requests
 app.post('/new.html', controllers.createPost);
 

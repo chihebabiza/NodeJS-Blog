@@ -1,0 +1,38 @@
+<%- include('./partials/head') %>
+
+    <body>
+        <header style="margin: 0px;padding: 30px;" class="masthead"
+            style="background-image: url('assets/img/home-bg.jpg')">
+            <div class="container position-relative">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Blog Login</h1><br>
+                            <span class="subheading">A Blog Theme by Chiheb Abiza</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br><br>
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <form class="form-signin">
+                        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                        <label for="inputUsername" class="sr-only">Email</label>
+                        <input type="email" id="inputUsername" class="form-control mb-3" placeholder="Email" required
+                            autofocus>
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input type="password" id="inputPassword" class="form-control mb-3" placeholder="Password"
+                            required>
+                        <button class="btn btn-lg btn-primary btn-block mb-3" type="submit">Login</button>
+                        <p class="mb-3">Don't have an account? <a href="signup">Sign up</a></p>
+                    </form><br>
+                </div>
+            </div>
+        </div>
+        <%- include('./partials/footer') %>
+    </body>
+
+    </html>

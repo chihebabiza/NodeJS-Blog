@@ -1,0 +1,52 @@
+<%- include('./partials/head') %>
+
+    <body>
+        <header style="margin: 0px;padding: 30px;" class="masthead"
+            style="background-image: url('assets/img/home-bg.jpg')">
+            <div class="container position-relative">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Blog Sign up</h1><br>
+                            <span class="subheading">A Blog Theme by Chiheb Abiza</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br><br>
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <form class="form-signup">
+                        <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+
+                        <label for="inputFirstName" class="sr-only">First Name</label>
+                        <input type="text" id="inputFirstName" class="form-control mb-3" placeholder="First Name"
+                            required autofocus>
+
+                        <label for="inputLastName" class="sr-only">Last Name</label>
+                        <input type="text" id="inputLastName" class="form-control mb-3" placeholder="Last Name"
+                            required>
+
+                        <label for="inputEmail" class="sr-only">Email address</label>
+                        <input type="email" id="inputEmail" class="form-control mb-3" placeholder="Email address"
+                            required>
+
+                        <label for="inputPassword" class="sr-only">Password</label>
+                        <input type="password" id="inputPassword" class="form-control mb-3" placeholder="Password"
+                            required>
+
+                        <button class="btn btn-lg btn-primary btn-block mb-3" type="submit">Sign up</button>
+
+                        <p class="mb-3">Already have an account? <a href="login">Sign in</a></p>
+
+                    </form><br>
+
+                </div>
+            </div>
+        </div>
+        <%- include('./partials/footer') %>
+    </body>
+
+    </html>
