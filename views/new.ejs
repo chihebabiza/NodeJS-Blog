@@ -1,0 +1,29 @@
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/nav') %>
+            <%- include('./partials/header') %>
+                <form action="/new.html" method="post">
+                    <div class="container px-4 px-lg-5">
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-md-10 col-lg-8 col-xl-7">
+                                <div data-mdb-input-init class="form-outline">
+                                    <label class="form-label" for="form6Example1">Blog title</label>
+                                    <input type="text" name="blogTitle" id="form6Example1" class="form-control" />
+                                </div>
+
+                                <!-- Message input -->
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label class="form-label" for="form6Example7">Blog body</label>
+                                    <textarea name="blogBody" style="max-height: 300px;min-height: 300px;"
+                                        class="form-control" id="form6Example7" rows="4"></textarea>
+                                </div>
+
+                                <!-- Submit button -->
+                                <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Create
+                                    blog</button>
+                            </div>
+                        </div>
+                </form>
+                <%- include('./partials/footer') %>
+    </body>

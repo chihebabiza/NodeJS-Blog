@@ -1,0 +1,36 @@
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/nav') %>
+            <%- include('./partials/header') %>
+                <!-- Main Content-->
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-md-10 col-lg-8 col-xl-7">
+                            <!-- Post previews loop -->
+                            <% posts.forEach(post=> { %>
+                                <div class="post-preview">
+                                    <a href="post.html<%= post._id %>"> <!-- Corrected to use _id -->
+                                        <h2 class="post-title">
+                                            <%= post.blogTitle %>
+                                        </h2>
+                                        <p style="height: 55px; overflow: hidden;" class="post-subtitle">
+                                            <%= post.blogBody %>
+                                        </p>
+                                    </a>
+                                    <p class="post-meta">
+                                        Posted by
+                                        <a href="#!">Chiheb Abiza</a> <!-- Update author as needed -->
+                                        <%= moment(post.createdAt).fromNow() %>
+                                    </p>
+                                </div>
+                                <!-- Divider-->
+                                <hr class="my-4" />
+                                <% }); %>
+                        </div>
+                    </div>
+                </div>
+                <%- include('./partials/footer') %>
+    </body>
+
+    </html>

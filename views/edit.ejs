@@ -1,0 +1,27 @@
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/nav') %>
+            <%- include('./partials/header') %>
+                <form action="/edit/<%= post._id %>?_method=PUT" method="post"> <!-- Corrected form action -->
+                    <div class="container px-4 px-lg-5">
+                        <div class="row gx-4 gx-lg-5 justify-content-center">
+                            <div class="col-md-10 col-lg-8 col-xl-7">
+                                <div data-mdb-input-init class="form-outline">
+                                    <label class="form-label" for="form6Example1">Blog title</label>
+                                    <input type="text" value="<%= post.blogTitle %>" name="blogTitle" id="form6Example1"
+                                        class="form-control" />
+                                </div>
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <label class="form-label" for="form6Example7">Blog body</label>
+                                    <textarea name="blogBody" style="max-height: 300px;min-height: 300px;"
+                                        class="form-control" id="form6Example7" rows="4"><%= post.blogBody %></textarea>
+                                </div>
+                                <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4">Update
+                                    blog</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <%- include('./partials/footer') %>
+    </body>
